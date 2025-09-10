@@ -1,0 +1,347 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f8f6fa;
+    color: #4b2c5e;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #e6e1f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5a2d82;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b2c5e;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #7e57c2;
+}
+
+/* Hero Section */
+.hero {
+   width:100%;
+    height: 100vh;
+    background: url('bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b2c5e;
+    padding: 40px;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #4b2c5e;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #7e57c2;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5a2d82;
+}
+
+.hero-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gray-bg {
+    background: #f1eef7;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5a2d82;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color: #4b2c5e;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: rgb(224, 191, 236);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #4b2c5e;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #5a2d82;
+}
+
+.project-card a {
+    color: #7e57c2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.cert-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #4b2c5e;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
+
+.cert-card h3 {
+    margin-bottom: 10px;
+    color: #5a2d82;
+}
+
+/* Small certificate preview */
+.cert-img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cert-img:hover {
+    transform: scale(1.08);
+}
+
+/* Modal Popup */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5a2d82;
+    color: #fff;
+}
+.img1{
+    
+    height: 30px;
+    width: 30px;
+    display: inline;
+}
+.cert-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cert-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+}
+
+.cert-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #5a2d82;
+}
+
+.cert-img {
+    width: 180px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+}
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    color: #4b2c5e;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.know-button {
+    margin-left: 35%;
+    padding: 10px 20px;
+    background: #7e57c2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.know-button:hover {
+    background: #5a2d82;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .cert-img {
+        width: 140px;
+    }
+
+     .cert-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

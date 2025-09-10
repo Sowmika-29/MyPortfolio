@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="linkedinprofile.jpg" type="linkedinprofile.jpg">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Photo -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Hello, I'm <span class="highlight">Sowmika H</span></h2>
+        <p>Aspiring Software Engineer | Web & Flutter Developer</p>
+        <a href="https://explore-my-sites.netlify.app/" class="btn">View My Work</a>
+      </div>
+      <div class="hero-photo">
+        <img src="linkedinprofile.jpg" alt="My Photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+     <p>
+      Hi, I'm <strong>Sowmika H</strong> , a passionate Computer Science and Engineering student.  
+      I enjoy turning ideas into reality through code and design. My interest lies in building 
+      <b>scalable web applications, mobile apps, and backend systems</b> that solve real-world problems.
+    </p>
+    <p>
+      I have hands-on experience in <b>Java, Web Development (HTML, CSS, JavaScript), and UI/UX design</b>.  
+      I'm constantly exploring new technologies, frameworks, and tools to stay updated in this fast-evolving field.  
+      Whether it's developing a <b>portfolio website</b>, creating a <b>blog platform</b>, or contributing to a 
+      <b>Smart India Hackathon project</b>, I strive to build impactful and user-friendly solutions.
+    </p>
+    <p>
+      Beyond coding, I believe in <b>continuous learning, collaboration, and innovation</b>.  
+      Every project I work on is an opportunity to push my limits and create something meaningful.  
+      I'm excited about a future where I can contribute to both <b>technology and society</b>.
+    </p>
+    <p>
+      Curious to see my work? Explore my skills, certifications, and projects below!  
+      <br><br>
+      <a href="https://explore-my-sites.netlify.app/" target="_blank">
+        <button class="know-button">Check Out My Work 🚀</button>
+      </a>
+    </p></div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section gray-bg">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Java</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Angular JS</div>
+      <div class="skill-card">Flutter</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>IoT Farming System</h3>
+        <p>Smart irrigation using IoT sensors and mobile app.</p>
+        
+      </div>
+      <div class="project-card">
+        <h3>Hospital Appointment System</h3>
+        <p>Full-stack web app for scheduling hospital visits efficiently.</p>
+        
+      </div>
+      <div class="project-card">
+        <h3>Blog Website</h3>
+        <p>Responsive blog platform with categories, posts & admin panel.</p>
+        
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal website to showcase skills, certifications, and projects.</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  
+ <section id="certifications" class="section gray-bg">
+  <h2>Certifications</h2>
+
+  <!-- Row 1 with 3 certs -->
+  <div class="cert-row">
+    <div class="cert-card">
+      <h3>Web Development Internship</h3>
+      <img src="webDevelopment.jpg" class="cert-img" onclick="openModal(this)">
+    </div>
+    <div class="cert-card">
+      <h3>Java programming</h3>
+      <img src="java.png" class="cert-img" onclick="openModal(this)">
+    </div>
+    <div class="cert-card">
+      <h3>Certificate 3</h3>
+      <img src="Letter Of Recommendation.jpg" class="cert-img" onclick="openModal(this)">
+    </div>
+  </div>
+
+  <!-- Row 2 with 2 certs -->
+  <div class="cert-row">
+    <div class="cert-card">
+      <h3>Letter Of Recommendation</h3>
+      <img src="Letter Of Recommendation.jpg" class="cert-img" onclick="openModal(this)">
+    </div>
+    <div class="cert-card">
+      <h3>UI UX Design Internship</h3>
+      <img src="UI_UX.jpg" class="cert-img" onclick="openModal(this)">
+    </div>
+  </div>
+</section>
+
+<!-- Modal for enlarged certificate -->
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="certPreview">
+</div>
+
+
+  <!-- Modal Popup -->
+  <div id="certModal" class="modal">
+    <span class="close" onclick="closeCert()">&times;</span>
+    <img class="modal-content" id="certPreview">
+  </div>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section gray-bg">
+    <h2>Contact</h2>
+    <p>Email: <a href="sowmika2912@gmail.com">sowmika2912@gmail.com</a></p>
+    <p>
+      <a href="https://github.com/Sowmika-29" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/sowmika-h-060721307/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Sowmika H. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function openModal(img) {
+      document.getElementById("certModal").style.display = "block";
+      document.getElementById("certPreview").src = img.src;
+    }
+    function closeModal() {
+      document.getElementById("certModal").style.display = "none";
+    }
+  </script>
+
+  <!-- <script>
+    var modal = document.getElementById("certModal");
+
+    function openCert(img) {
+      modal.style.display = "block";
+      document.getElementById("certPreview").src = img.src;
+    }
+
+    function closeCert() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script> -->
+
+
+</body>
+
+</html>
