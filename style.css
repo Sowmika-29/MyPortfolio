@@ -50,7 +50,7 @@ body {
 
 /* Hero Section */
 .hero {
-   width:100%;
+    width: 100%;
     height: 100vh;
     background: url('bg.jpg');
     display: flex;
@@ -125,36 +125,82 @@ body {
 }
 
 /* Skills */
+.skill-category {
+    font-size: 1.2rem;
+    color: #4b2c5e;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+    border-bottom: 2px solid #5a2d82;
+    padding-bottom: 5px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 250px;
+}
+
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 2px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
 }
 
 .skill-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-weight: 500;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    font-weight: 400;
     color: #4b2c5e;
 }
+
+.skill-card::after {
+    content: ",";
+}
+
+.skill-card:last-child::after {
+    content: "";
+    /* Remove trailing comma */
+}
+
 
 /* Projects */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-card {
     background: rgb(224, 191, 236);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #4b2c5e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .project-card h3 {
@@ -214,16 +260,16 @@ body {
 
 /* Modal Popup */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 2000; 
-    padding-top: 60px; 
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.8); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -255,12 +301,14 @@ footer {
     background: #5a2d82;
     color: #fff;
 }
-.img1{
-    
+
+.img1 {
+
     height: 30px;
     width: 30px;
     display: inline;
 }
+
 .cert-row {
     display: flex;
     justify-content: center;
@@ -294,6 +342,7 @@ footer {
 .cert-img:hover {
     transform: scale(1.05);
 }
+
 .about-content {
     max-width: 800px;
     margin: auto;
@@ -339,9 +388,8 @@ footer {
         width: 140px;
     }
 
-     .cert-row {
+    .cert-row {
         flex-direction: column;
         align-items: center;
     }
 }
-
